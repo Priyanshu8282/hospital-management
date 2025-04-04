@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import jwt from 'jsonwebtoken';
 import validator from 'validator';
 import { sendOtpEmail, sendWelcomeEmail } from '../../config/nodemailer.js'; // Import both email functions
-import sendSMS from '../../config/twilio.js';
+// import sendSMS from '../../config/twilio.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -113,11 +113,7 @@ const loginUser = async (req, res) => {
                 name: `${user.firstName} ${user.lastName}`,
                 otp, // Pass the OTP here
             });
-        } else if (mobile_no) {
-            // Send OTP via SMS
-            await sendSMS(mobile_no, otp);
-        }
-
+        } 
         res.status(200).json({ message: 'OTP sent successfully' });
     } catch (error) {
         console.error('Login error:', error);
