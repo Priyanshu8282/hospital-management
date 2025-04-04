@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to DocuCare</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .header {
+      background-color: #4597B5;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+    .content p {
+      font-size: 16px;
+      color: #333333;
+      margin: 10px 0;
+    }
+    .footer {
+      background-color: #f5f9fa;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #555555;
+    }
+    .footer a {
+      color: #4597B5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Welcome to DocuCare</h1>
+    </div>
+    <div class="content">
+      <p>Dear <strong><%= name %></strong>,</p>
+      <p>We are thrilled to have you join the DocuCare family!</p>
+      <p>At DocuCare, we are committed to providing you with the best healthcare services. Whether you're booking appointments, accessing medical records, or consulting with our expert doctors, we are here to make your experience seamless and efficient.</p>
+      <p>If you have any questions or need assistance, feel free to reach out to our support team.</p>
+      <p>Thank you for choosing DocuCare. We look forward to serving you!</p>
+    </div>
+    <div class="footer">
+      <p>Need help? <a href="mailto:support@docucare.com">Contact Support</a></p>
+      <p>&copy; <%= new Date().getFullYear() %> DocuCare. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

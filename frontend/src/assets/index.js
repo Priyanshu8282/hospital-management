@@ -1,0 +1,22 @@
+import slider1 from './slider_1.png';
+import slider2 from './slider_2.png';
+import slider3 from './slider_3.png';
+import image1 from './image_1.png';
+import logo from './logo.png';
+import Cardiology from './Cardiology.png';
+import Orthopedics from './Orthopedics.png';
+import Neurology from './Neurology.png';
+import Dermatology from './Dermatology.png';
+import Pediatrics from './Pediatrics.png';
+import Gynecology from './Gynecology.png';
+import General_Consultation from './General Consultation.png';
+import about from './about.png';
+import image2 from './image_2.png';
+import team_1 from './team_1.png';
+import team_2 from './team_2.png';  
+import team_3 from './team_3.png';
+import team_4 from './team_4.png';
+import team_5 from './team_5.png';
+import team_6 from './team_6.png';
+
+export { slider1, slider2, slider3, image1, logo, Cardiology, Orthopedics, Neurology, Dermatology, Pediatrics, Gynecology, General_Consultation,about,image2,team_1,team_2,team_3,team_4,team_5,team_6 };
