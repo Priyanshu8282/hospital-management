@@ -73,7 +73,7 @@ function Navbar() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:3000/auth/register', formData);
+      const response = await axios.post('https://hospital-management-paa1.onrender.com/auth/register', formData);
 
       const userId = response.data.user._id; // Extract 
   
@@ -95,7 +95,7 @@ function Navbar() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:3000/auth/login', {
+      const response = await axios.post('https://hospital-management-paa1.onrender.com/auth/login', {
         email: loginMethod === 'email' ? formData.email : '',
         mobile_no: loginMethod === 'mobile' ? formData.mobile_no : '',
       });
@@ -112,7 +112,7 @@ function Navbar() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:3000/auth/verify-otp', {
+      const response = await axios.post('https://hospital-management-paa1.onrender.com/auth/verify-otp', {
         email: loginMethod === 'email' ? formData.email : '',
         mobile_no: loginMethod === 'mobile' ? formData.mobile_no : '',
         otp,
